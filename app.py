@@ -30,7 +30,7 @@ import json
 import repo
 import random
 # [---------------------------------------END IMPORTING LIBRARIES-------------------------------------]
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = u"C:/Users/yashs/Documents/arjun/flask/ArjunBot.json"
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = u"../ArjunBot.json"
 
 class Config(object):
     SCHEDULER_API_ENABLED = True
@@ -142,7 +142,7 @@ def sendOTPtoPhone(phoneNo):
     #Send the request
 
     message = 'Hi this is Neel. Your OTP is:: '+str(r.randint(1, 9))
-    resp, code = sendSMS('ucbTyQZmpS4-DGo19AnCvnd1qWjqLrhI2LWeRNZLPN', phoneNo, 'TXTLCL', message)
+    resp, code = sendSMS('', phoneNo, 'TXTLCL', message)
     logger.debug(resp)
     if(resp):
         return resp

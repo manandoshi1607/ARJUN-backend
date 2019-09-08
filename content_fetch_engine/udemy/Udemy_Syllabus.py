@@ -1,7 +1,7 @@
 from pyudemy import Udemy
 from pymongo import *
 import pprint
-udemy = Udemy('rRC240H2iJPsEs3xhf08t9oteczzegiiQdjeGcDt', 'xeNDt6vsxRxiOlzGl09ZvcmNzXdLXucBLUHMKQNIWJYJqkbucWjAh2uslTpMFxlX1GCsrOrktcnApxNWpkcWoZElIW20YUkVtAsSbKRwOkarTpX2gNLyUovtIuOKZ3wQ')
+udemy = Udemy('', '')
 
 def fetch_data(search_for):
     search_term = search_for

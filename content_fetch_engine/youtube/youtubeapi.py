@@ -21,7 +21,7 @@ class YoutubeAPI:
     page_info = {}
 
     def __init__(self):
-        self.youtube_key = 'AIzaSyChmer3BVJM8qWSZYy5UlAuewdnLY53aEE'
+        self.youtube_key = ''
 
     def get_video_info(self, video_id):
 
